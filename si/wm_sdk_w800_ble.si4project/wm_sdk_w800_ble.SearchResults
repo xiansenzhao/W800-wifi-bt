@@ -1,0 +1,51 @@
+---- UserMain Matches (7 in 5 files) ----
+main.c (app) line 16 : 
+
+void UserMain(void)
+{
+//add by zxx start
+	My_task();
+w800.asm (tools\w800\projects\SDK_Project\project\CDK_WS\W800_SDK\Lst) line 5834 : 
+
+080d3cb0 <UserMain>:
+*****************************************************************************/ 
+#include "wm_include.h"
+
+
+void UserMain(void)
+{
+ 80d3cb0:	14d0      	push      	r15
+//add by zxx start
+w800.asm (tools\w800\projects\SDK_Project\project\CDK_WS\W800_SDK\Lst) line 7448 : 
+
+    UserMain();
+ 80d4678:	e3fffb1c 	bsr      	0x80d3cb0	// 80d3cb0 <UserMain>
+
+    tls_sys_auto_mode_run();
+ 80d467c:	e3fffe3a 	bsr      	0x80d42f0	// 80d42f0 <tls_sys_auto_mode_run>
+wm_include.h (include) line 20 : 
+ *
+ * Function UserMain(void) is the entrance function of the application:
+ * @code
+ * void UserMain(void)
+ * {
+ *     printf("\n user task\n");
+ *
+wm_main.c (platform\sys) line 121 : 
+extern void tls_sys_auto_mode_run(void);
+extern void UserMain(void);
+extern void tls_bt_entry();
+
+void task_start (void *data);
+task_start in wm_main.c (platform\sys) : 
+
+    UserMain();
+
+    tls_sys_auto_mode_run();
+#endif
+wm_touchsensor_demo.c (demo) line 44 : 
+/*test code
+You can call this function in function UserMain in main.c and when you touch the pad,you can find uart log printing from function tls_touchsensor_irq_handler.
+If the corresponding bit is set, this touch sensor has been touched.
+You can register your callback if need.
+*/

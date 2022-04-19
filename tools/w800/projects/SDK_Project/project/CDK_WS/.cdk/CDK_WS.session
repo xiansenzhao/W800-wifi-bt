@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="D:\PROJECT_SDK\wm_sdk_w800_wifi_bt\tools\w800\projects\SDK_Project\project\CDK_WS\CDK_WS.cdkws">
+  <int Value="1" Name="m_selectedTab"/>
+  <wxString Value="D:\PROJECT_SDK\wm_sdk_w800_wifi_bt\tools\w800\projects\SDK_Project\project\CDK_WS\CDK_WS.cdkws" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="D:\PROJECT_SDK\wm_sdk_w800_wifi_bt\demo\console\wm_demo_console_task.c" Name="FileName"/>
+      <int Value="834" Name="FirstVisibleLine"/>
+      <int Value="855" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\PROJECT_SDK\wm_sdk_w800_wifi_bt\demo\wm_udp_demo.c" Name="FileName"/>
+      <int Value="223" Name="FirstVisibleLine"/>
+      <int Value="240" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>
